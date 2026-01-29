@@ -1,3 +1,4 @@
+import { PlusIcon } from 'lucide-react'
 import { Link } from 'react-router'
 
 const Navbar = () => {
@@ -9,8 +10,9 @@ const Navbar = () => {
                     Think Board
                 </h1>
                 <div className='flex items-center gap-4'>
-                    <Link to={"/create"} className="btn btn-primary btn-sm">
-                        Create Note
+                    <Link to={"/create"} className="btn btn-primary">
+                        <PlusIcon className='size-5'/>
+                        <span>New Note</span>
                     </Link>
                 </div>
             </div>

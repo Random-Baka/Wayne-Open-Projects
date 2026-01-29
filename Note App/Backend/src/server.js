@@ -14,6 +14,9 @@ const app = express();
 // Set constant for port.
 const PORT = process.env.PORT || 3000;
 
+// cors middleware to allow cross-origin requests.
+app.use(cors());
+
 // Middleware to parse JSON request bodies.
 // app.use(express.json());
 
@@ -22,8 +25,7 @@ app.use(bodyParser.json({ limit: "15mb", extended: true}));
 app.use(bodyParser.urlencoded({ limit: "15mb", extended: true}));
 app.use(rateLimiter);
 
-// cors middleware to allow cross-origin requests.
-app.use(cors());
+
 
 // Notes routes for /api/notes endpoint.
 app.use("/api/notes", notesRoutes);

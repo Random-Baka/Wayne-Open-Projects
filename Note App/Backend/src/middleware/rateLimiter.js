@@ -2,6 +2,6 @@
 // Two rate limiting libraries considered but not used: express-rate-limit, rate-limiter-flexible
 export const rateLimiter = (req, res, next) => {
   // Implement rate limiting logic here
-  console.log("Rate limiter middleware triggered.");
+  
   next();
 };

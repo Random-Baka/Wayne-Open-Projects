@@ -7,7 +7,7 @@ import NoteDetailsPage from './pages/NoteDetailsPage.jsx';
 const App = () =>  {
 
   return (
-    <div className="App" data-theme="cupcake">
+    <div className="App" data-theme="forest">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/create" element={<CreatePage />} />
